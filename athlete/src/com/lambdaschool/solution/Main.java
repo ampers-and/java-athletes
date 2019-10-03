@@ -28,5 +28,30 @@ public class Main
         app = injector.getProcess();
         app.displayAthlete();
 
+
+        //STRETCH
+
+        CourtInjector courtInjector;
+
+        // Create a Track Court
+        courtInjector = new TrackCourtInjector();
+        app = courtInjector.getProcess();
+        app.displayCourt();
+
+        // Create a Hockey Court
+        courtInjector = new HockeyCourtInjector();
+        app = courtInjector.getProcess();
+        app.displayCourt();
+
+        // Create a Rugby Court
+        courtInjector = new RugbyCourtInjector();
+        app = courtInjector.getProcess();
+        app.displayCourt();
+
+        // Create a Baseball Court
+        courtInjector = new BaseballCourtInjector();
+        app = courtInjector.getProcess();
+        app.displayCourt();
+
     }
 }
